@@ -6,3 +6,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: mystep1
+        run: |
+          whoami
+          pwd
+          cd
+          ls -al
