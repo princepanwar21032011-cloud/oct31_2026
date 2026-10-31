@@ -4,4 +4,5 @@ on:
 jobs:
   myjob1:
     runs-on: ubuntu-22.04
-
+    steps:
+      - name: mystep1
