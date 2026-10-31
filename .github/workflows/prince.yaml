@@ -3,3 +3,5 @@ on:
   push:
 jobs:
   myjob1:
+    runs-on: ubuntu-22.04
+
