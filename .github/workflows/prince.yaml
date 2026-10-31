@@ -11,3 +11,5 @@ jobs:
           pwd
           cd
           ls -al
+      - name: mystep2-clone the repo in current work directory
+        uses: actions/checkout@v4
