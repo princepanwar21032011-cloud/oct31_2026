@@ -1,9 +1,12 @@
 name: myworkflow1
+
 on:
   push:
+
 jobs:
   myjob1:
     runs-on: ubuntu-22.04
+
     steps:
       - name: mystep1
         run: |
@@ -11,11 +14,14 @@ jobs:
           pwd
           cd
           ls -al
-      - name: mystep2-clone the repo in current work directory
+
+      - name: mystep2-clone the repo
         uses: actions/checkout@v4
+
       - name: mystep3-check the source code
         run: ls -al
-     - name: mystep4-build docker image
+
+      - name: mystep4-build docker image
         run: docker build -t princepanwar21032011/myimage_oct_31:t${{ github.run_number }} -f Dockerfile .
 
       - name: mystep5-check the docker image
